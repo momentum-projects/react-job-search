@@ -30,7 +30,9 @@ The options in tab navigation correspond to different keyword searches. You can 
 
 Go to the [FindWork API](https://findwork.dev/developers/) and sign up for free access to their developer portal. The [documentation page](https://findwork.dev/developers/) will walk you through how to use the API. You will need to get an API key  to make requests. It is available on the [documentation page](https://findwork.dev/developers/); just read the documentation to find the link.
 
-The request will need to include a header that contains the API key, like this:
+⚠️ If you get CORS errors, use this proxy API instead: `https://proxy-findwork-api.glitch.me`. You can use that in your requests in place of `https://findwork.dev`.
+
+Requests will need to include a header that contains the API key, like this:
 
 ```js
 axios.get(apiURL, {
